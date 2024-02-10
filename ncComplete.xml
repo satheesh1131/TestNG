@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<parameter name="browserName" value="chrome"></parameter>
+	<parameter name="pageUrl" value="https://demo.nopcommerce.com/"></parameter>
+	<parameter name="workBook" value="C:\\Users\\dell\\Documents\\WorkBook\\MavenWorkBook.xlsx"></parameter>
+  <test thread-count="5" name="computers" parallel="tests">
+	  <classes >
+		  <class name="completeTest.NopCommerceComputer"  >
+			  <methods>
+				  <include name="startUp"></include>	
+				  <include name="deskTop"></include>
+				  <include name="cpu"></include>
+				  <include name="noteBooks"></include>
+				  <include name="appleMac"></include>
+				  <include name="softWare"></include>
+				  <include name="windows8"></include>
+			  </methods>
+		  </class>
+		  <class name="completeTest.NopCommerceOrderCompletion">
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+	
+  <test thread-count="5" name="electronics">
+    <classes>
+      <class name="completeTest.NopCommerceElectronics">
+		  <methods>
+			  <include name="startUp"></include>	
+			  <include name="cameraPhoto"></include>
+			  <include name="nikonDslr"></include>
+			  <include name="cellPhone"></include>
+			  <include name="htcMini"></include>
+			  <include name="othersOption"></include>
+			  <include name="portableSpeakers"></include>
+		  </methods>
+	  </class>
+	  <class name="completeTest.NopCommerceOrderCompletion">
+		  </class>
+    </classes>
+  </test> 
+  <!--  <test thread-count="5" name="apparels">
+    <classes>
+      <class name="completeTest.NopCommerceApparel">
+		  <methods>
+			  <include name="startUp"></include>	
+			  <include name="shoes"></include>
+			  <include name="adidasCampus"></include>
+			  <include name="clothing"></include>
+			  <include name="customTshirt"></include>
+			  <include name="accesories"></include>
+			  <include name="obeyHat"></include>
+		  </methods>
+	  </class>
+    </classes>
+  </test> 
+     <test thread-count="5" name="digitalDownloads">
+    <classes>
+      <class name="completeTest.NopCommerceDigitalDownloads"></class>
+    </classes>
+  </test> 
+   
+  <test thread-count="5" name="books">
+    <classes>
+      <class name="completeTest.NopCommerceBooks">
+	  </class>
+    </classes>
+  </test> 
+   
+  <test thread-count="5" name="jewelry">
+    <classes>
+      <class name="completeTest.NopCommerceJewelry">
+	  </class>
+    </classes>
+  </test> 
+  
+  <test thread-count="5" name="giftCards">
+    <classes>
+      <class name="completeTest.NopCommerceGiftCards">
+	  </class>
+    </classes>
+  </test>  -->
+
+ </suite> <!-- Suite -->

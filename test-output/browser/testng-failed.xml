@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [browser]">
+  <test thread-count="5" name="waits(failed)">
+    <groups>
+      <run>
+        <include name="category"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNG.Nop_Commerce">
+        <methods>
+          <include name="computerOptionPage"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- testNG.Nop_Commerce -->
+    </classes>
+  </test> <!-- waits(failed) -->
+</suite> <!-- Failed suite [browser] -->
